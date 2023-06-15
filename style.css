@@ -6,7 +6,7 @@
 }
 
 header {
-  color: violet;
+  color: red;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 70px;
@@ -27,14 +27,31 @@ header > p {
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .float-left {
   float: left;
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: darkslateblue;
+  color: white;
+  align-items: center;
 }
 
 .clearfix::after {
   content: "";
   display: block;
   clear: both;
+}
+
+.float-left > img {
+  width: 35%;
+  height: auto;
+}
+
+span {
+  color: aqua;
 }
